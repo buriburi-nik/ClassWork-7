@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="title">LocalTasker</h1>
+      <h1 className="title">grocery bud</h1>
 
       <form onSubmit={handleSubmit}>
         <input
