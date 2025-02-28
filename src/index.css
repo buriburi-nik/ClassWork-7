@@ -1,0 +1,123 @@
+:root {
+  --clr-primary: #4ddb6c;
+  --clr-primary-dark: #eb7e3a;
+  --clr-white: #eaede8;
+  --clr-grey-1: #489ded;
+  --clr-grey-2: #5ba1f1;
+  --clr-grey-3: #a4a4ee;
+  --clr-black: #000;
+  --transition: 0.3s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--clr-grey-1);
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: var(--clr-white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+form input {
+  width: 70%;
+  padding: 0.5rem;
+  border: 1px solid var(--clr-grey-2);
+  border-radius: 4px;
+}
+
+form button {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+form button:hover {
+  background-color: var(--clr-primary-dark);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-grey-2);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+li:hover {
+  background-color: var(--clr-grey-3);
+}
+
+li span {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: #101010;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: var(--clr-white);
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+  transition: scale(1.1);
+}
+
+.clear-btn {
+  display: block;
+  margin: 1rem auto 0 auto;
+  background-color: #bdc3c7;
+  color: var(--clr-black);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.clear-btn:hover {
+  background-color: #57ccd4;
+}
